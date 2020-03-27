@@ -20,7 +20,7 @@ def simulation(n)
 end
 
 def solve
-  (1..50).map{ |x| simulation(x) }
+  (1..50).map(&method(:simulation))
 end
 
 puts solve
